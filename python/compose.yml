@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: python
+    build:
+      context: .
+    volumes:
+      - .:/code
+    tty: true
+    stdin_open: true
